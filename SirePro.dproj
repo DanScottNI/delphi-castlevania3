@@ -1,0 +1,164 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{9e909755-ca3f-4c00-ae78-29718eca9dfb}</ProjectGuid>
+    <MainSource>SirePro.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>SirePro.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_Optimize>False</DCC_Optimize>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_UnitSearchPath>$(DELPHI)\Lib\Debug;C:\Program Files\Borland\Delphi7\Lib\Components\JVCL300BETA1JCL190Complete\jcl\lib\d7\debug</DCC_UnitSearchPath>
+    <DCC_ResourcePath>$(DELPHI)\Lib\Debug;C:\Program Files\Borland\Delphi7\Lib\Components\JVCL300BETA1JCL190Complete\jcl\lib\d7\debug</DCC_ResourcePath>
+    <DCC_ObjPath>$(DELPHI)\Lib\Debug;C:\Program Files\Borland\Delphi7\Lib\Components\JVCL300BETA1JCL190Complete\jcl\lib\d7\debug</DCC_ObjPath>
+    <DCC_IncludePath>$(DELPHI)\Lib\Debug;C:\Program Files\Borland\Delphi7\Lib\Components\JVCL300BETA1JCL190Complete\jcl\lib\d7\debug</DCC_IncludePath>
+    <DCC_Define>madExcept;RELEASE</DCC_Define>
+    <DCC_SYMBOL_PLATFORM>False</DCC_SYMBOL_PLATFORM>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Optimize>False</DCC_Optimize>
+    <DCC_SymbolReferenceInfo>2</DCC_SymbolReferenceInfo>
+    <DCC_UnitSearchPath>$(DELPHI)\Lib\Debug;C:\Program Files\Borland\Delphi7\Lib\Components\JVCL300BETA1JCL190Complete\jcl\lib\d7\debug</DCC_UnitSearchPath>
+    <DCC_ResourcePath>$(DELPHI)\Lib\Debug;C:\Program Files\Borland\Delphi7\Lib\Components\JVCL300BETA1JCL190Complete\jcl\lib\d7\debug</DCC_ResourcePath>
+    <DCC_ObjPath>$(DELPHI)\Lib\Debug;C:\Program Files\Borland\Delphi7\Lib\Components\JVCL300BETA1JCL190Complete\jcl\lib\d7\debug</DCC_ObjPath>
+    <DCC_IncludePath>$(DELPHI)\Lib\Debug;C:\Program Files\Borland\Delphi7\Lib\Components\JVCL300BETA1JCL190Complete\jcl\lib\d7\debug</DCC_IncludePath>
+    <DCC_Define>madExcept;DEBUG</DCC_Define>
+    <DCC_SYMBOL_PLATFORM>False</DCC_SYMBOL_PLATFORM>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject xmlns=""> <Delphi.Personality>   <Parameters>
+      <Parameters Name="RunParams">"c:\bugfluff" -d</Parameters>
+      <Parameters Name="UseLauncher">False</Parameters>
+      <Parameters Name="LoadAllSymbols">True</Parameters>
+      <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+    </Parameters>
+    <VersionInfo>
+      <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+      <VersionInfo Name="AutoIncBuild">True</VersionInfo>
+      <VersionInfo Name="MajorVer">1</VersionInfo>
+      <VersionInfo Name="MinorVer">0</VersionInfo>
+      <VersionInfo Name="Release">0</VersionInfo>
+      <VersionInfo Name="Build">14</VersionInfo>
+      <VersionInfo Name="Debug">False</VersionInfo>
+      <VersionInfo Name="PreRelease">False</VersionInfo>
+      <VersionInfo Name="Special">False</VersionInfo>
+      <VersionInfo Name="Private">False</VersionInfo>
+      <VersionInfo Name="DLL">False</VersionInfo>
+      <VersionInfo Name="Locale">2057</VersionInfo>
+      <VersionInfo Name="CodePage">1252</VersionInfo>
+    </VersionInfo>
+    <VersionInfoKeys>
+      <VersionInfoKeys Name="CompanyName">Dan's Space</VersionInfoKeys>
+      <VersionInfoKeys Name="FileDescription">Sire - Castlevania 3 Editor</VersionInfoKeys>
+      <VersionInfoKeys Name="FileVersion">1.0.0.14</VersionInfoKeys>
+      <VersionInfoKeys Name="InternalName"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+      <VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductName">Sire</VersionInfoKeys>
+      <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="Comments">Sire - Castlevania 3 Editor</VersionInfoKeys>
+    </VersionInfoKeys>
+    <Source>
+      <Source Name="MainSource">SirePro.dpr</Source>
+    </Source>
+  </Delphi.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <ItemGroup />
+  <ItemGroup>
+    <DelphiCompile Include="SirePro.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <None Include="ChangeLog.txt" />
+    <None Include="Data\candleitem.dat" />
+    <None Include="Data\Castlevania 3 - Draculas Curse (U).ini" />
+    <None Include="Data\enemy.dat" />
+    <DCCReference Include="cConfiguration.pas" />
+    <DCCReference Include="cEnemy.pas" />
+    <DCCReference Include="cGraphics.pas" />
+    <DCCReference Include="cLevel.pas" />
+    <DCCReference Include="cLevelObj.pas" />
+    <DCCReference Include="cMisc.pas" />
+    <DCCReference Include="cPresetObj.pas" />
+    <DCCReference Include="cROMData.pas" />
+    <DCCReference Include="cSpecObj.pas" />
+    <DCCReference Include="fAbout.pas">
+      <Form>frmAbout</Form>
+    </DCCReference>
+    <DCCReference Include="fBlockProperties.pas">
+      <Form>frmBlockProperties</Form>
+    </DCCReference>
+    <DCCReference Include="fCheatEditor.pas">
+      <Form>frmCheatEditor</Form>
+    </DCCReference>
+    <DCCReference Include="fCHRExp.pas">
+      <Form>frmCHRExpansion</Form>
+    </DCCReference>
+    <DCCReference Include="fDamageSettings.pas">
+      <Form>frmDamage</Form>
+    </DCCReference>
+    <DCCReference Include="fEnemyCandlePreview.pas">
+      <Form>frmEnemyCandlePreview</Form>
+    </DCCReference>
+    <DCCReference Include="fEnemyDataInspector.pas">
+      <Form>frmEnemyDataInspector</Form>
+    </DCCReference>
+    <DCCReference Include="fGlobalCandleEditor.pas">
+      <Form>frmGlobalCandleEditor</Form>
+    </DCCReference>
+    <DCCReference Include="fGlobalEnemyEditor.pas">
+      <Form>frmGlobalEnemyEditor</Form>
+    </DCCReference>
+    <DCCReference Include="fLevelProperties.pas">
+      <Form>frmLevelProperties</Form>
+    </DCCReference>
+    <DCCReference Include="fLevelStats.pas">
+      <Form>frmLevelStatistics</Form>
+    </DCCReference>
+    <DCCReference Include="fObjectProp.pas">
+      <Form>frmObjProperties</Form>
+    </DCCReference>
+    <DCCReference Include="fOpenDialog.pas">
+      <Form>frmOpenDialog</Form>
+    </DCCReference>
+    <DCCReference Include="fPalette.pas">
+      <Form>frmPaletteEditor</Form>
+    </DCCReference>
+    <DCCReference Include="fPreferences.pas">
+      <Form>frmPreferences</Form>
+    </DCCReference>
+    <DCCReference Include="fPresetObj.pas">
+      <Form>frmPresetObj</Form>
+    </DCCReference>
+    <DCCReference Include="fROMPatches.pas">
+      <Form>frmROMPatches</Form>
+    </DCCReference>
+    <DCCReference Include="fSire.pas">
+      <Form>frmSireMain</Form>
+    </DCCReference>
+    <DCCReference Include="fTextEditor.pas">
+      <Form>frmTextEditor</Form>
+    </DCCReference>
+    <DCCReference Include="fTileEditor.pas">
+      <Form>frm8x8TileEditor</Form>
+    </DCCReference>
+    <DCCReference Include="fTSA.pas">
+      <Form>frmTSAEditor</Form>
+    </DCCReference>
+    <DCCReference Include="uConsts.pas" />
+    <DCCReference Include="uGlobal.pas" />
+    <DCCReference Include="uLunarcompress.pas" />
+    <DCCReference Include="uResourcestrings.pas" />
+    <DCCReference Include="uROM.pas" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+</Project>
